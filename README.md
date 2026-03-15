@@ -1,73 +1,45 @@
-# React + TypeScript + Vite
+# 🥤 FantaWiki — L'encyclopédie ultime des saveurs Fanta
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Vercel Deployment](https://img.shields.io/badge/Deploy-Vercel-black?style=for-the-badge&logo=vercel)](https://fantawiki.vercel.app)
+[![React](https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react)](https://react.dev)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com)
 
-Currently, two official plugins are available:
+**FantaWiki** est un projet de fan (non officiel) dédié à la célébration de la diversité incroyable des saveurs Fanta à travers le monde. Du classique Orange aux éditions limitées mystérieuses, explorez un catalogue riche de plus de 85 variétés.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🎨 Identité Visuelle (Rebrand 2023)
 
-## React Compiler
+Le site adopte la nouvelle Direction Artistique globale de Fanta lancée en 2023 :
+- **Style Neo-brutaliste / Pop-Art** : Bordures épaisses, ombres solides et couleurs vibrantes.
+- **Typographie "Paper Cut"** : Utilisation de *Luckiest Guy* pour un look audacieux et découpé.
+- **Composant FantaCan** : Un rendu dynamique en 3D stylisée pour chaque canette, adaptant sa couleur et son étiquette à la saveur.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Fonctionnalités
 
-## Expanding the ESLint configuration
+- 🔍 **Catalogue Complet** : Recherche et filtres par catégorie, région et statut (Zero, Limitée).
+- 🌍 **Tour du Monde** : Exploration des saveurs par pays et régions (Japon, Brésil, Europe...).
+- 🥤 **Détails des Saveurs** : Pages dédiées avec ambiance visuelle personnalisée.
+- 📱 **Responsive Design** : Une expérience pétillante sur tous les écrans.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Stack Technique
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Framework** : [Vite](https://vitejs.dev/) + [React 19](https://reactjs.org/)
+- **Styling** : [Tailwind CSS 4](https://tailwindcss.com/)
+- **Icônes** : [Lucide React](https://lucide.dev/)
+- **Routing** : [React Router 7](https://reactrouter.com/)
+- **Déploiement** : [Vercel](https://vercel.com/)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📦 Installation Locale
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+# Cloner le dépôt
+git clone https://github.com/Teeflo/FantaWiki.git
+
+# Installer les dépendances
+npm install
+
+# Lancer le serveur de développement
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+*Ce projet est une initiative de fan à but éducatif et créatif. Fanta est une marque déposée de The Coca-Cola Company.*
